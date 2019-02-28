@@ -1,18 +1,22 @@
 class Cube
-  
+
     def set_side(num)
-        if num==null
-            @a=0
-        else    
           @a=num
-        end  
     end
     
     def get_side()
-       return  @a
+    
+      if @a== nil
+         0
+      else    
+        @a
+      end
     end
 end
 
+
 c = Cube.new
-c.set_side()
+
+puts c.get_side()
+c.set_side(5)
 puts c.get_side()
